@@ -8,7 +8,7 @@
     @method('PATCH')
     @csrf
 
-    @include (staff.form')
+    @include ('staff.form')
 
     <div class="form-group">
         <input class="btn btn-primary" type="submit" value="Update">

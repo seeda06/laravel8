@@ -12,7 +12,7 @@ class Staff extends Model
     use HasFactory;
     protected $table = "staffs";
     //ชื่อคอลัมน์ในฐานข้อมูลที่อนุญาติให้แก้ไขข้อมูล
-    protected $fillable = ["Name", "Age", "Salary", "Phone"];
+    protected $fillable = ["Name", "Age", "Salary", "Phone"];   
     //Primary Key
     protected $primaryKey = "id";
 }

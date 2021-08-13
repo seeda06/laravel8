@@ -28,10 +28,10 @@ class StaffController extends Controller
                     ->orWhere('Age', 'LIKE', "%$search%")
                     ->orWhere('Salary', 'LIKE', "%$search%")
                     ->orWhere('Phone', 'LIKE', "%$search%")
-                    ->orderBy('id', 'desc')->paginate($perPage);
+                    ->orderBy('Name', 'desc')->paginate($perPage);
             } else {
     //กรณีไม่มีข้อมูล search จะทำงานเหมือนเดิม
-    $staffs = Staff::orderBy('id','desc')->paginate($perPage);
+    $staffs = Staff::orderBy('Name','desc')->paginate($perPage);
             }
     
             //$staffs = Staff::orderBy('date', 'desc')->get();

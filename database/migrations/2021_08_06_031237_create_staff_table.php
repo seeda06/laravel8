@@ -13,8 +13,6 @@ class CreateStaffTable extends Migration
      */
     public function up()
     {
-        
-            
             Schema::create('staffs', function (Blueprint $table) {
                 $table->id();
                 $table->timestamps();
@@ -22,8 +20,8 @@ class CreateStaffTable extends Migration
                 $table->string('Name')->nullable();
                 $table->integer('Age')->nullable();
                 $table->integer('Salary')->nullable();
-                $table->integer('Phone')->nullable();
-               
+                $table->string('Phone')->nullable();
+            
                 
             });
         
