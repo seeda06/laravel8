@@ -57,3 +57,7 @@ Route::delete('/covid19/{id}', [ Covid19Controller::class , 'destroy' ]);
 use App\Http\Controllers\StaffController;
 Route::resource('/staff', StaffController::class );
 
+
+//Route::resource('post', 'PostController');
+use App\Http\Controllers\PostController;
+Route::resource('post', PostController::class);
