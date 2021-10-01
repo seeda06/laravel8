@@ -1,3 +1,4 @@
+
 <div class="form-group {{ $errors->has('order_id') ? 'has-error' : ''}}">
     <label for="order_id" class="control-label">{{ 'Order Id' }}</label>
     <input class="form-control" name="order_id" type="number" id="order_id" value="{{ isset($orderproduct->order_id) ? $orderproduct->order_id : ''}}" >
@@ -29,7 +30,3 @@
     {!! $errors->first('total', '<p class="help-block">:message</p>') !!}
 </div>
 
-
-<div class="form-group">
-    <input class="btn btn-primary" type="submit" value="{{ $formMode === 'edit' ? 'Update' : 'Create' }}">
-</div>
